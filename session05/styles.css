@@ -1,0 +1,151 @@
+body {
+    background-image: url("images/brown-wallpaper.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#wrapper {
+    background-color:#E6CBC1;
+    width: 70%;
+    margin: 0px auto;
+}
+
+header, nav, main, footer {
+    padding: 20px;
+    border: 1px solid #8F6351;
+
+}
+
+main h2 {
+
+background-color:white;
+padding: 6px;
+border-bottom: 10px solid #B6BAE3;
+/* values are clockwise */
+margin: 20px 0px 0px 0px;
+}
+
+/* styling a div block element box */
+div.imageContainer {
+    background-color: #fff;
+    padding: 20px;
+    border: 5px solid #8F6351;
+
+    display: flex;          
+    flex-wrap: wrap;         
+    justify-content: center; 
+    gap: 20px;               
+}
+
+div.singleImage {
+    text-align: center; 
+}
+
+div.singleImage img {
+    width: 200px;   
+    height: auto;   
+    border: 11px solid #252B66;
+    padding: 10px;
+}
+
+div.singleImage p {
+    margin-top: 2px;     
+    font-style: italic;    
+    font-size: 0.9rem;    
+    color: #252B66;         
+}
+
+/* styling a img inline element box */
+div.imageContainer img {
+width: 200px;
+height: auto;
+border: 11px solid #252B66;
+margin: 22px;
+padding: 40px;
+background-image: url(images/paper-background.jpg)
+}
+
+main h3{
+    color:#252B66;
+    font-family: "Pacifico", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size:x-large;
+    text-shadow:
+    2px 1px 0 #B6BAE3,
+    -2px 1px 0 #B6BAE3,
+    2px -1px 0 #B6BAE3,
+    -2px -1px 0 #B6BAE3;
+}
+main h2{
+    color:black;
+    font-family: "VT323", monospace;
+    font-weight: 400;
+    font-style: normal;
+    font-size:40px;
+}
+header h1{
+    color:black;
+    font-family: "Pacifico", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size:35px;
+    text-shadow:
+    2px 1px 0 #B6BAE3,
+    -2px 1px 0 #B6BAE3,
+    2px -1px 0 #B6BAE3,
+    -2px -1px 0 #B6BAE3;
+}
+header h2{
+    color:#252B66;
+    font-family: "Pacifico", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size:20px
+}
+nav{
+    font-family: "VT323", monospace;
+    font-weight: 400;
+    font-style: normal;
+    font-size:25px;
+}
+nav a {
+    color: #41662B;
+    text-decoration: none; 
+}
+
+nav a:visited {
+    color: #41662B;
+}
+
+nav a:hover {
+    color:#D0E3C5; 
+}
+
+footer h4{
+    color:#D0E3C5;
+    font-family: "VT323", monospace;
+    font-weight: 400;
+    font-style: normal;
+    font-size:30px;
+    text-shadow: 
+        2px 2px 0 #41662B,
+       -2px 2px 0 #41662B,
+        2px -2px 0 #41662B,
+       -2px -2px 0 #41662B;
+}
+footer li{
+    font-family: "Abril Fatface", serif;
+    font-weight: 300;
+    font-style: normal;
+    color:black;
+    font-size:17px;
+}
+footer li a,
+footer li a:visited {
+    color: #41662B;
+}
+footer li a:hover {
+    color:#D0E3C5;
+}
