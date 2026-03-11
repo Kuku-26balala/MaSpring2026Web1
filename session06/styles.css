@@ -1,0 +1,92 @@
+div.galleryItem {
+    background-image: url('images/orangebg.jpg');
+    float: left;
+    width: 300px;
+    box-shadow: 2px 2px 5px #000;
+    height: 350px;
+    border: 1px solid #000;
+    padding:10px;
+    margin: 10px;
+}
+
+
+div.galleryItem img{
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    
+}
+
+div.galleryItem p {
+    color:black;
+    text-align: center;
+    font-family: "Caveat", cursive;
+    font-weight: 400;
+    font-size: 20px;
+    text-shadow: 3px 3px 6px #ffffff;
+}
+
+footer {
+    background-color:#F5C44C;
+    float: none;
+    clear: both;
+    font-family: "VT323", monospace;
+    font-size: 25px;
+    text-align: center; 
+    padding: 10px;   
+}
+
+body {
+    background-image: url('images/yellowbg.jpg'); 
+    background-size: cover;      
+    background-position: center; 
+    background-repeat: no-repeat;
+}
+
+body h1{
+  font-family: "Playball", cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 40px;
+  color: #F57349;
+  text-shadow: 3px 3px 6px #F5C44C;
+}
+
+body h2{
+font-family: "Playball", cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 30px;
+  color: #F55549;
+  text-shadow: 3px 3px 6px #F5C44C;
+}
+
+main h3{
+    font-family: "Caveat", cursive;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 25px;
+  text-shadow: 3px 3px 6px #F5C44C;
+}
+
+nav a{
+    font-family: "VT323", monospace;
+    font-size:22px;
+    color:#F5AE49;
+    text-shadow: 2px 2px 2px;
+    margin: 0 15px;
+}
+
+nav a:hover{
+    color:#F55549
+}
+div.galleryItem p a {
+    color: #252B66;             
+    text-decoration: none;      
+}
+
+div.galleryItem p a:hover {
+    color:#F55549;            
+    text-decoration: underline; 
+}
