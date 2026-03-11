@@ -1,0 +1,107 @@
+/*html tag selector */
+body {
+    background-color: rgb(255, 203, 135);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* id selector */
+#wrapper {
+    background-color: antiquewhite;
+    width: 70%;
+    margin: 0px auto;
+    /* top and bottom are no margin,
+    left and right are automatically equal */
+}
+
+/* grouping selector */
+h3, h4, h5 {
+margin: 0px;
+}
+
+h1 {
+    color: rgb(255, 204, 0);
+    font-family: "Sacramento", cursive;
+    font-size: 48px;
+    text-shadow: 
+        2px 2px 0 black,
+       -2px 2px 0 black,
+        2px -2px 0 black,
+       -2px -2px 0 black;
+}
+
+/* descendant selectors */
+header h2 {
+    color: #ffa845;
+    font-family: "VT323", monospace;
+    font-size: 42px;
+    text-shadow: 
+        2px 2px 0 red,
+       -2px 2px 0 red,
+        2px -2px 0 red,
+       -2px -2px 0 red;
+}
+
+nav {
+    color:black;
+    font-family: "Comic Neue", cursive;
+    font-size: 18px
+}
+nav a:hover {
+    color: rgb(255, 0, 157);
+}
+
+main h2 {
+    color: rgb(251, 13, 13);
+    font-family: "Abril Fatface", serif;
+    font-size: 30px
+    
+}
+
+main h3 {
+    margin-top: 45px;
+  font-family: "Lobster Two", sans-serif;
+  font-size: 30px;
+  font-weight: 400;
+  font-style: normal;
+  color:rgb(255, 179, 222);
+  text-shadow: 
+        2px 2px 0 rgb(84, 40, 146),
+       -2px 2px 0 rgb(154, 66, 255),
+        2px -2px 0 rgb(255, 125, 125),
+       -2px -2px 0 rgb(251, 64, 148);
+}
+
+main h4 {
+font-size: 30px;
+font-family: "VT323", monospace;
+}
+/* pseudo class selector */
+
+main a:hover {
+color: rgb(255, 0, 204);
+text-decoration: none;
+}
+
+main h5 {
+    color: #ffce0a;
+    font-size: 20px;
+    font-family: "Playpen Sans", cursive;
+    text-shadow: 
+        2px 2px 0 rgb(208, 25, 25),
+       -2px 2px 0 rgb(154, 66, 255),
+        2px -2px 0 rgb(255, 125, 125),
+       -2px -2px 0 rgb(251, 64, 148);
+    font-weight:500
+}
+/* START FOOTER STYLES */
+span.copyright {
+    color:red;
+    font-family: "VT323", monospace;
+    font-size: 25px
+}
+
+span.author {
+    color:rgb(0, 166, 255);
+    font-family: "VT323", monospace;
+    font-size: 25px
+}
