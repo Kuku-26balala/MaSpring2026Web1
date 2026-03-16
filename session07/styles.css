@@ -1,0 +1,177 @@
+/* START border-box fix */
+html {
+  box-sizing: border-box;
+}
+
+/* asterisk (*) symbol represents the universal selector. Its primary function is to select all elements of any type within the document. */
+
+/* :before is a pseudo-element used to insert content before the actual content of a selected element. It creates a "virtual" first child within the element, allowing you to style and add content that isn't directly present in your HTML markup. */
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+/* END border-box fix */
+
+body{
+     
+    background-image:url(images/star.jpg);
+    background-size: cover;      
+    background-position: center; 
+   background-repeat: repeat; 
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;  
+    align-items: center;      
+    min-height: 100vh;     
+    margin: 0;          
+}
+
+/*FLEX PARENT*/
+.container{
+    background-color:#CCA9C1;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1000px;
+}
+
+/*FLEX CHILDREN*/
+header{
+    background-image:url(images/pinkwall.jpg);
+    background-size:cover;
+    order: 1;
+    flex: 1 0 100%;
+    text-align:center;
+    font-family: "Henny Penny", system-ui;
+    font-size:20px;
+    text-shadow:#ff52ab 2px 2px 2px;
+    /* grow on, shrink off, span width of browser */
+}
+
+main{
+    background-image:url(images/pinkpattern.jpg);
+    order: 3;
+    flex: 1 1 500px;
+    font-family: "Sunshiney", cursive;
+    font-size:20px;
+}
+
+/*DISPLAY NAV HIGHER ON PAGE BUT LEFTING THE HTML*/
+nav{
+    background-image:url(images/darkpink.jpg);
+    order: 2;
+    flex: 1 0 200px;
+    font-family: "Mansalva", sans-serif;
+    color: White;
+    text-shadow:#db0071 1px 1px 1px;
+    text-align:center; 
+}
+
+aside{
+    background-image:url(images/ppink.jpg);
+    background-size:cover;
+    order: 4;
+    flex: 1 0 200px;
+    font-family: "Sunshiney", cursive;
+    font-size: 20px;
+    color:rgb(70, 0, 46);
+}
+
+aside h2{
+    background-color: rgba(255, 212, 243, 0.6); 
+    padding:5px 10px;
+    border-radius:20px;
+    display:inline-block;
+}
+
+aside p{
+    background-color: rgba(255, 255, 255, 0.6);
+    padding:8px 10px;
+    border-radius:6px;
+}
+
+footer{
+    background-image:url(images/pinkwall.jpg);
+    background-size:cover;
+    order: 5;
+    flex: 1 0 100%;
+    font-family: "Henny Penny", system-ui;
+    font-size:15px;
+    text-shadow:#ff52ab 1px 1px 1px;
+    text-align:center; 
+}
+
+nav ul{
+list-style:none;
+padding:0;
+}
+
+nav a{
+display:block;
+background:#F4A1CC;
+color:rgb(0, 0, 0);
+text-decoration:none;
+margin:20px 0;
+border-radius:10px;
+text-align:center;  
+font-family: "Mansalva", sans-serif; 
+text-shadow:rgb(255, 252, 253) 2px 2px 2px;
+
+}
+
+nav a:hover{
+background:#A1A6B1;
+}
+
+
+.artist {
+    display: flex;
+    align-items: flex-start; 
+    gap: 20px;             
+    margin-bottom: 30px;  
+    background-color: #FFEDF3;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 10px 10px rgba(0,0,0,0.2);
+}
+
+
+.artist-img{
+    width:200px;
+    height:200px;
+    object-fit:cover; 
+    border-radius:10px;
+    flex-shrink:0;
+}
+
+
+.artist-info h3 a {
+    color: #ae0040;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.artist-info h3 a:hover {
+    color: #ff4ac0;
+}
+
+.artist-info p {
+    margin-top: 8px;
+    line-height: 1.5;
+}
+
+main h2{
+    background-color: rgba(255, 212, 243, 0.6); 
+    padding:5px 10px;
+    border-radius:20px;
+    display:inline-block;
+}
+
+nav h1{
+    background-color: rgba(255, 212, 243, 0.6); 
+    padding:5px 10px;
+    border-radius:20px;
+    display:inline-block;
+    font-size:20px;
+}
