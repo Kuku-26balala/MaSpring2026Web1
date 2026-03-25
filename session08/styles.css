@@ -1,0 +1,249 @@
+/* BEGIN border-box fix */
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+/* END border-box fix */
+
+body {
+    background-image: url(images/bluepaper.jpg);
+    background-size: cover;      
+    background-position: center; 
+   background-repeat: repeat; 
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;  
+    align-items: center;      
+    min-height: 100vh;     
+ /* remove margin and padding on body */
+    padding:0;
+    margin:0;
+}
+
+/* Grouping example */
+h1,
+h2,
+h3,
+h4,
+h5 {
+  text-transform: uppercase;
+}
+
+/*GRID CONTAINER (PARENT) */
+.wrapper {
+    background: rgb(158, 213, 255);
+    /* grid layout parent */
+    display: grid;
+    /* create 12 col layout */
+    grid-template-columns: repeat(12, minmax(0, 1fr));
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* padding on imediate children of wrapper */
+.wrapper>* {
+    padding: 20px;
+}
+
+/*8GRID ITEMS (CHILDREN) */
+header {
+    background-image: url(images//water02.jpg);
+    grid-column: 1 / 13;
+    background-size:cover;
+}
+
+header h1{
+    text-align: center;
+    margin: 0;
+    color:aliceblue;
+    font-family: "Sunshiney", cursive;
+    text-shadow: 
+        -2px -2px 0 rgb(54, 0, 171),
+         2px -2px 0 rgb(77, 15, 211),
+        -2px  2px 0 black,
+         2px  2px 0 black;
+}
+
+nav {
+    background-image: url(images/bluebg01.jpg);
+    background-size:cover;
+    grid-column: 1 / 4;
+    font-family: "VT323", monospace;
+    font-size:25px;
+}
+
+nav h2 {
+    margin-bottom: 20px;
+    letter-spacing: 2px;
+    color:rgb(122, 131, 255);
+    text-shadow: 
+        -2px -2px 0 black,
+         2px -2px 0 black,
+        -2px  2px 0 black,
+         2px  2px 0 black;
+}
+
+nav ul {
+    list-style: none; 
+    padding: 0;
+    margin: 0;
+    text-shadow: 
+        -2px -2px 0 rgb(54, 0, 171),
+         2px -2px 0 rgb(77, 15, 211),
+        -2px  2px 0 black,
+         2px  2px 0 black;
+}
+
+
+nav li {
+    margin-bottom: 30px;
+}
+
+a {
+    text-decoration: none;
+    color: #ffffff;        
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: #ff00fb;       
+}
+
+main {
+    background-color: rgba(94, 192, 231, 0.883);
+    background-size:cover;
+    grid-column: 4 / 10;
+}
+
+aside {
+    background-image: url(images/blue.jpg);
+    background-size:cover;
+    grid-column: 10 / 13;
+}
+
+/* span 2 rows*/
+main,
+nav,
+aside {
+    grid-row: 2 / 4;
+}
+
+footer {
+    background-image: url(images//water02.jpg);
+    background-size:cover;
+    grid-column: 1 / 13;
+    font-family: "Sunshiney", cursive;
+    color:aliceblue;
+    font-size: 21px;
+}
+
+.projects {
+    display: flex;
+    flex-direction: column; 
+    gap: 20px; 
+    align-items: center; 
+}
+
+.project img {
+    width: 300px;  
+    height: 200px; 
+    object-fit: cover; 
+    border-radius: 15px;
+    display: block;
+}
+
+.project p {
+    text-align: center; 
+    margin-top: 10px;  
+}
+
+.project p a {
+    text-decoration: none; 
+    color: #ffffff;        
+    transition: color 0.3s;  
+}
+
+.project p a:hover {
+    color:#ff00fb;
+}
+
+main h3{
+    font-family: "Kaushan Script", cursive;
+    text-shadow:#986ff6 1px 1px 1px;
+    color:rgb(57, 69, 146);
+    background-color: rgba(206, 242, 250, 0.374);
+    padding: 12px;
+    border-radius: 30px;
+}
+main h2{
+    font-family: "Abril Fatface", serif;
+  font-weight: 400;
+  font-style: normal;
+  text-shadow:#4879d3 2px 2px 2px;
+  color:rgb(33, 41, 95);
+  background-color: rgba(216, 245, 255, 0.616); 
+    display: inline-block;
+    padding: 8px 15px;
+    border-radius: 20px;
+    box-shadow:#002871 2px 2px 2px 2px;
+}
+
+main a{
+    color:rgb(255, 255, 255);
+    text-shadow:#002871 2px 2px 2px;
+    font-family: "Sunshiney", cursive;
+    font-size: 18px;
+}
+
+h4 {
+    text-transform: none;
+}
+
+h4 a{
+    font-size:22px;
+}
+
+aside h2{
+    font-family: "VT323", monospace;
+    font-size:30px;
+    text-align: center;
+    letter-spacing: 2px;
+    color:rgb(122, 131, 255);
+    text-shadow: 
+        -2px -2px 0 black,
+         2px -2px 0 black,
+        -2px  2px 0 black,
+         2px  2px 0 black;
+}
+
+main p{
+    font-family: "Courgette", cursive;
+    font-size: 19px;
+    background-color: rgba(216, 245, 255, 0.4); 
+    display: inline-block;
+    padding: 8px 15px;
+    border-radius: 20px;
+    box-shadow:#002871 2px 2px 2px 2px;
+}
+
+aside p{
+    font-family: "Courgette", cursive;
+    font-size: 15px;
+    background-color: rgba(216, 245, 255, 0.616); 
+    display: inline-block;
+    padding: 8px 15px;
+    border-radius: 20px;
+    box-shadow:#002871 2px 2px 2px 2px;
+}
+nav a{
+    background-color: rgba(216, 245, 255, 0.616); 
+    display: inline-block;
+    padding: 8px 15px;
+    border-radius: 20px;
+    box-shadow:#002871 2px 2px 2px 2px;
+}
