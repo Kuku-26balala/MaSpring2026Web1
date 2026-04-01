@@ -1,0 +1,140 @@
+input[type="radio"] {
+  display: none;
+}
+body{
+  background-color:#ffdbf2;
+}
+
+.color-picker {
+  display: flex;
+  gap: 20px;
+}
+
+@keyframes scaleIn {
+  0% {transform: scale(0.2);}
+  85% {transform: scale(1.1)}
+  100% {transform: scale(1)}
+}
+
+h2 {
+  font-size: 50px;
+  text-align:center;
+  font-family: "Permanent Marker", cursive;
+  color:rgb(255, 68, 199);
+  text-shadow: 3px 3px 0px #000000;
+  animation-name: scaleIn;
+  animation-duration: 2s;
+}
+
+.btn {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: 0.2s;
+  box-shadow: 0 5px 0 rgba(0,0,0,0.4);
+}
+
+.btn:active {
+  transform: translateY(5px);
+  box-shadow: 0 0 0 rgba(0,0,0,0.4);
+}
+
+.yellow { background: #ffd500; }
+.red { background: #fe0633; }
+.green { background: #2aff04; }
+.blue { background: #4c9bf0; }
+.purple { background: #9d4edd; }
+
+#yellow:checked ~ .wrapper {
+  background-image: url("images/yellow.jpg");
+}
+
+#red:checked ~ .wrapper {
+  background-image: url("images/red.jpg");
+}
+
+#green:checked ~ .wrapper {
+  background-image: url("images/green.jpg");
+}
+
+#blue:checked ~ .wrapper {
+  background-image: url("images/blue.jpg");
+}
+
+#purple:checked ~ .wrapper {
+  background-image: url("images/purple.jpg");
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+.wrapper {
+  min-height: 100vh;
+  background-size: cover;      
+  background-position: center; 
+  background-repeat: no-repeat;
+  transition: 0.5s;
+}
+
+.center {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn:active {
+  transform: translateY(-25px);
+}
+
+.nav-bar {
+  display: flex;
+  flex-direction: column; 
+  gap: 15px;          
+  margin-left: 100px;   
+}
+.nav-bar a {
+  text-decoration: none;  
+  font-family: "Mansalva", sans-serif;
+  font-size: 20px;
+  background: #ff93c2;
+  padding: 10px 15px;
+  border-radius: 8px;
+  width: fit-content;
+  box-shadow: 0 4px 0 rgba(0,0,0,0.3);
+  transition: 0.2s;
+}
+.nav-bar a:hover {
+  background: #97ffe7;
+  transform: translateY(-3px);
+  box-shadow: 0 7px 0 rgba(0,0,0,0.3);
+}
+
+footer {
+  display: flex;
+  flex-direction: column; 
+  gap: 15px;          
+  margin-left: 100px; 
+}
+
+footer p {
+  background: #ffffff;
+  padding: 8px 12px;
+  border-radius: 8px;
+  width: fit-content;
+  box-shadow: 0 4px 0 rgba(0,0,0,0.3);
+  font-family: "Mansalva", sans-serif;
+  font-size: 18px;
+}
+
+footer a{
+  text-decoration: none; 
+  color:#ff82b8;
+}
+
+footer a:hover{
+color:#ff0088;
+}
