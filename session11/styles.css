@@ -1,0 +1,101 @@
+body {
+	margin: 0;
+	font-family: monospace;
+	background: url("./images/bg.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	min-height: 100vh;
+}
+
+
+h1 {
+	position: fixed;
+	top: 20px;
+	left: 50%;
+	transform: translateX(-50%);
+	margin: 0;
+	color: #00ffff;
+	letter-spacing: 3px;
+	font-family: "VT323", monospace;
+	font-size: 40px;
+	text-shadow: 0 0 10px #00ffff;
+}
+
+#page {
+    display: grid;
+    grid-template-columns: 250px 400px 250px; 
+    gap: 70px;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding-top: 60px; 
+    box-sizing: border-box;
+	
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    gap: 20px; 
+    background: rgba(0,0,0,0.5);
+    border-radius: 15px;
+    padding: 20px; 
+    height: 600px;
+    align-content: start;
+    justify-items: center;
+}
+
+#left-container {
+	grid-column: 1;
+	border: 2px solid #2b92ff;
+}
+
+#tetris {
+	width: 400px;
+	height: 600px;
+	background: rgba(0,0,0,0.8);
+	border: 4px solid #00ffff;
+	border-radius: 15px;
+	position: relative;
+	background-image:
+		linear-gradient(#222 1px, transparent 1px),
+		linear-gradient(90deg, #222 1px, transparent 1px);
+	background-size: 40px 40px;
+}
+
+#right-container {
+	grid-column: 3;
+	border: 2px solid #00ffff;
+}
+
+.block-holder {
+	width: 100px; 
+    height: 100px;
+	object-fit: contain;
+	position: relative;
+	display: flex;
+	justify-content: center;
+}
+
+.block {
+	width: 150px;
+	position: absolute;
+	cursor: grab;
+	z-index: 10;
+}
+
+.block:active {
+	cursor: grabbing;
+	filter: drop-shadow(0 0 10px #00ffff);
+}
+
+footer {
+	width: 100%;
+	text-align: center;
+	padding: 10px 0;
+	color: #00ffff;
+	font-size: 12px;
+	position: relative;
+	margin-top: 20px;
+}
