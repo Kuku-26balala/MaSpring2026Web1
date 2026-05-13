@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Peking Opera Proposal</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Noto+Serif+SC:wght@300;400;500&display=swap"
+        rel="stylesheet">
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            min-height: 100vh;
+            background-image: url(images/background.png);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+
+            color: #f5e6c8;
+            font-family: 'Noto Serif SC', serif;
+            overflow-x: hidden;
+            position: relative;
+        }
+
+        /* Background */
+        body::before {
+            content: "";
+            position: fixed;
+            left: -80px;
+            bottom: 0;
+            width: 500px;
+            height: 100vh;
+
+            background-image: url(images/jing-character.png);
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: left bottom;
+
+            opacity: 0.28;
+
+            pointer-events: none;
+            z-index: 0;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 900px;
+            margin: auto;
+            padding: 80px 0;
+            position: relative;
+            z-index: 1;
+        }
+
+        .opera {
+            text-align: center;
+            margin-bottom: 60px;
+            display: none;
+        }
+
+        .opera h1 {
+            font-family: 'Cinzel', serif;
+            font-size: 4rem;
+            letter-spacing: 8px;
+            color: #d4af37;
+            margin-bottom: 15px;
+            text-shadow: 0 0 10px rgba(212, 175, 55, 0.4);
+        }
+
+        .opera p {
+            font-size: 1.1rem;
+            color: #f8e7b9;
+            letter-spacing: 2px;
+        }
+
+        .line {
+            width: 180px;
+            height: 2px;
+            background: #d4af37;
+            margin: 25px auto;
+        }
+
+        .card {
+            margin-bottom: 25px;
+            border: 1px solid rgba(212, 175, 55, 0.4);
+            border-radius: 18px;
+            overflow: hidden;
+            background: rgba(255, 255, 255, 0.04);
+            backdrop-filter: blur(4px);
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            box-shadow: 0 0 20px rgba(212, 175, 55, 0.25);
+            transform: translateY(-3px);
+        }
+
+        .card-title {
+            padding: 22px;
+            cursor: pointer;
+            font-family: 'Cinzel', serif;
+            font-size: 1.2rem;
+            letter-spacing: 3px;
+            color: #f0d27a;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .card-title span {
+            font-size: 1.4rem;
+        }
+
+        .card-content {
+            display: none;
+            padding: 0 22px 22px 22px;
+            line-height: 1.8;
+            color: #f4f1e6;
+            font-size: 1rem;
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 60px;
+            color: rgba(255, 255, 255, 0.5);
+            font-size: 0.9rem;
+            letter-spacing: 2px;
+        }
+
+        @media (max-width: 768px) {
+            .opera h1 {
+                font-size: 2.5rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <section class="opera">
+            <h1>PEKING OPERA</h1>
+            <div class="line"></div>
+            <p>FINAL WEBSITE PROPOSAL</p>
+        </section>
+
+        <div class="card">
+            <div class="card-title">
+                THEME
+            </div>
+
+            <div class="card-content">
+                This project explores the art and cultural significance of Peking Opera, one of the most iconic forms of
+                traditional Chinese performance. The website aims to introduce its history, visual aesthetics, symbolic
+                makeup, and theatrical traditions through an immersive digital experience. </div>
+        </div>
+
+        <div class="card">
+            <div class="card-title">
+                WEBSITE DESCRIPTION
+            </div>
+            <div class="card-content">
+                The website will consist of three main sections. The first page will provide an introduction to the
+                history and origins of Peking Opera. The second page will focus on traditional character roles,
+                including Sheng, Dan, Jing, and Chou, along with the meanings behind facial makeup and costume design.
+                The final page will feature interactive elements that allow users to explore masks, symbolism, and
+                visual details through animation and user interaction.
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-title">
+                FONTS & COLORS
+            </div>
+
+            <div class="card-content">
+                I want the website to have a traditional and theatrical feeling. I plan to use serif or brush-style
+                fonts inspired by Chinese opera aesthetics. The main colors will be red, black, and gold because they
+                reflect traditional Chinese culture and create a dramatic visual atmosphere.
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-title">
+                INTERACTIVE ELEMENTS (JavaScript, p5.js & jQuery)
+            </div>
+
+            <div class="card-content">
+
+                <p><strong>JavaScript element:</strong><br>
+                    <br>
+                    Add interactive buttons and image effects. Users can hover over Peking Opera masks to see
+                    information,
+                    or click images to reveal hidden content.</p>
+
+                    <br>
+
+                <p><strong>p5.js element:</strong><br>
+                    <br>
+                    An interactive “mask changing” animation inspired by Peking Opera. Users can click or move the mouse
+                    to
+                    switch between different opera masks (different colors and facial expressions). The animation reacts
+                    to
+                    user interaction and creates a simple “face-changing” effect.</p>
+
+                    <br>
+
+                <p><strong>jQuery element:</strong><br>
+                    <br>
+                    Use effects like slideToggle(), fadeIn(), and animations. Buttons let users show and hide different
+                    sections smoothly.</p>
+
+            </div>
+        </div>
+
+
+        <div class="footer">
+            © Jinjing Ma — JQUERY FINAL PROJECT PROPOSAL
+        </div>
+
+    </div>
+
+    <script>
+
+        $(document).ready(function () {
+
+            // Fade in title
+            $(".opera").fadeIn();
+
+            // Click to show content
+            $(".card-title").click(function () {
+                $(this).next().slideToggle();
+            });
+
+            // Hover effect
+            $(".card").hover(
+                function () {
+                    $(this).animate({
+                        marginLeft: "10px"
+                    });
+                },
+                function () {
+                    $(this).animate({
+                        marginLeft: "0px"
+                    });
+                }
+            );
+
+        });
+
+    </script>
+
+</body>
+
+</html>
